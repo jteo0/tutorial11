@@ -11,8 +11,8 @@ Reflection on Rolling Update & Kubernetes Manifest File
 1. What is the difference between Rolling Update and Recreate deployment strategy?
 Jika menggunakan Rolling Update, pod yang diupdate akan di update secara perlahan-lahan tanpa perlu diterminate. Sebalinknya, Recreate Deployment akan terminate pod yang akan di update, sehingga ada downtime yang tidak muncul saat menggunakan Rolling Update. 
 
-2. Try deploying the Spring Petclinic REST using Recreate deployment strategy and document
-your attempt.
+2. Try deploying the Spring Petclinic REST using Recreate deployment strategy and document your attempt.
+Dengan mengikuti referensi dari https://dev.to/cloudskills/kubernetes-deployment-strategy-recreate-3kgn, saya melihat yaml yang menerapkan Recreate deploys dan membandingkannya dengan yaml yang sudah dibuat. Setelah itu, saya menjalankan kubectl edit replicaset archetype untuk membuat perubahan itu dan mengikuti step lain paga bagian manual recreate deployment.
 
 3. Prepare different manifest files for executing Recreate deployment strategy.
 Lihat file deployment2.yaml
