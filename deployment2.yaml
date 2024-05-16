@@ -21,10 +21,8 @@ spec:
     matchLabels:
       app: spring-petclinic-rest
   strategy:
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
-    type: RollingUpdate
+    rollingUpdate: null
+    type: Recreate
   template:
     metadata:
       creationTimestamp: null
